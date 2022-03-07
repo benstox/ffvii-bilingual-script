@@ -1,0 +1,162 @@
+\documentclass[10pt]{book}
+
+\usepackage{luatexja-fontspec}
+%\setmainjfont{MS Mincho} % \mcfamily
+%\setsansjfont{MS Gothic} % \gtfamily
+\usepackage{fontspec}
+\usepackage{fullpage} % to reduce the margins
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{lettrine}
+
+\setmainfont{Gentium Plus}
+\usepackage[japanese,english]{babel}
+\newcommand{\switchjapanese}[1][]{\selectlanguage{japanese} \switchcolumn*[#1]}
+\newcommand{\switchenglish}{\selectlanguage{english} \switchcolumn}
+
+% Roles
+\newcommand{\role}[1]{\textbf{#1}}
+\newcommand{\roleBarretEng}{\role{Barret}}
+\newcommand{\roleBarretJap}{\role{バレット}}
+\newcommand{\roleBiggsEng}{\role{Biggs}}
+\newcommand{\roleBiggsJap}{\role{ビッグス}}
+\newcommand{\roleJessieEng}{\role{Jessie}}
+\newcommand{\roleJessieJap}{\role{ジェシー}}
+\newcommand{\roleCloudEng}{\role{Cloud}}
+\newcommand{\roleCloudJap}{\role{クラウド}}
+\newcommand{\stageDirection}[1]{\textit{#1}}
+\newenvironment{paracolSection}
+    {\begin{paracol}{2}
+    \selectlanguage{japanese}
+    }
+    {
+    \end{paracol}
+    }
+
+% RED
+\definecolor{benred8}{HTML}{E82C00} 
+
+% BLUE
+\definecolor{benblue1}{HTML}{2B22C7}
+
+% YELLOWS
+\definecolor{benyellow1}{HTML}{FFD435}
+\definecolor{benyellow2}{HTML}{7C6F3B}
+
+% Luke Smith's title formatting
+\titleformat{\section}
+{\scshape\centering\Large}
+{§\thesection}
+{1em}
+{}
+\titleformat{\subsection}
+{\scshape\centering\large}
+{§\thesubsection}
+{1em}
+{}
+\titleformat{\subsubsection}
+{\itshape\centering\large}
+{§\thesubsubsection}
+{1em}
+{}
+
+\title{Final Fantasy VII Bilingual Script\\ファイナルファンタジーVII英和セリフ}
+\author{Kazushige Nojima・野島一成\\Yoshinori Kitase・北瀬佳範\\Hironobu Sakaguchi・坂口博信\\Tetsuya Nomura・野村哲也}
+
+\begin{document}
+
+\maketitle
+
+\section*{Disc 1}
+
+\stageDirection{The opening sequence: A whirl of stars, humming softly, the view slowly
+drifting downwards and changing to show Aeris's face lit by Mako. She stands
+and walks out into the streets of Midgar as the camera pans back to show the
+city in full before again diving in, this time following a train as it pulls
+into a station in Sector 8. Biggs and Jessie leap off first, taking out the two
+guards stationed there. Wedge follows, and the three of them run ahead. Barret
+and Cloud leap down last.}
+
+\begin{paracolSection}
+
+\roleBarretJap
+
+行くぞ、新入り！ オレに続け！
+
+\switchenglish
+
+\roleBarretEng
+
+C'mon newcomer. Follow me.
+
+\end{paracolSection}
+
+\stageDirection{Barret runs ahead. Cloud follows, taking out two guards who stand in his path.
+He joins Biggs, Wedge, and Jessie at the gate to the reactor complex, where
+Jessie is working to open the door.}
+
+\begin{paracolSection}
+
+\roleBiggsJap
+
+さすが、ソルジャー！ でもよ、反神羅（しんら）グループ【アパランチ】にソルジャーが参加するなんてスゲェよな！
+
+\switchenglish
+
+\roleBiggsEng
+
+Wow! You used to be in SOLDIER all right! ...Not everyday ya find one in a group like AVALANCHE.
+
+\switchjapanese
+
+\roleJessieJap
+
+その話って本当だったの？ ソルジャーって言ったら 私たちの敵でしょ？
+
+どうして、そのソルジャーが私たちアバランチに協力するわけ？
+
+\switchenglish
+
+\roleJessieEng
+
+SOLDIER? Aren't they the enemy?
+
+What's he doing with us in AVALANCHE?
+
+\switchjapanese
+
+\roleBiggsJap
+
+早とちりするな、ジェシー。元、ソルジャーなんだってさ
+
+今はもう神羅（しんら）をやめちまって 俺たちの仲間ってわけさ
+
+まだ名前聞いてなかったよな。教えてくれ
+
+\switchenglish
+
+\roleBiggsEng
+
+Hold it, Jessie. He WAS in SOLDIER.
+
+He quit them and now is one of us.
+
+Didn't catch your name...
+
+\switchjapanese
+
+\roleCloudJap
+
+……クラウドだ
+
+\switchenglish
+
+\roleCloudEng
+
+...Cloud.
+
+\end{paracolSection}
+
+\end{document}
+
