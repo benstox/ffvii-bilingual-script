@@ -1,0 +1,559 @@
+Sector 1 - The No. 1 Reactor
+Enter AVALANCHE
+Escape from Sector 8
+Last Train Home
+The opening sequence: A whirl of stars, humming softly, the view slowly drifting downwards and changing to show Aeris's face lit by Mako. She stands and walks out into the streets of Midgar as the camera pans back to show the city in full before again diving in, this time following a train as it pulls into a station in Sector 8. Biggs and Jessie leap off first, taking out the two guards stationed there. Wedge follows, and the three of them run ahead. Barret and Cloud leap down last.
+
+Barret
+C'mon newcomer. Follow me.
+
+Barret runs ahead. Cloud follows, taking out two guards who stand in his path. He joins Biggs, Wedge, and Jessie at the gate to the reactor complex, where Jessie is working to open the door.
+
+Biggs
+Wow! You used to be in SOLDIER all right! ...Not everyday ya find one in a group like AVALANCHE.
+
+Jessie
+SOLDIER? Aren't they the enemy?
+What's he doing with us in AVALANCHE?
+
+Biggs
+Hold it, Jessie. He WAS in SOLDIER.
+He quit them and now is one of us.
+Didn't catch your name...
+
+Cloud
+...Cloud.
+
+Biggs
+Cloud, eh? I'm...
+
+Cloud
+I don't care what your names are. Once this job's over... I'm outta here.
+
+Barret comes running over.
+
+Barret
+The hell you all doin'!? I thought I told you never to move in a group!
+Our target's the North Mako Reactor. We'll meet on the bridge in front of it.
+
+Jessie opens the door and she, Biggs, and Wedge run through. Barret turns back to Cloud.
+
+Barret
+Ex-SOLDIER, huh? Don't trust ya!
+If you push the Directional button while pushing the [CANCEL] button to run. (earlier marked X)
+
+Barret runs on ahead. Cloud looks up at the reactor before following. In front of the reactor, everyone but Wedge heads across the bridge inside.
+
+Wedge
+I'll secure the escape passage. Concentrate on the mission, Cloud.
+Geez, we're really gonna blow this huge furnace up? This'll be somethin' to see!
+
+Cloud follows the others into the reactor.
+
+Barret
+Yo! This your first time in a reactor?
+
+Cloud
+No. After all, I did work for Shinra, y'know.
+
+Barret
+The planet's full of Mako energy. People here use it every day.
+
+Cloud shrugs.
+
+Barret
+It's the life blood of this planet. But Shinra keeps suckin' the blood out with these weird machines.
+
+Cloud
+I'm not here for a lecture. Let's just hurry.
+
+Barret
+That's it! You're comin' with me from now on.
+
+Jessie
+Biggs and I got the code for this door.
+
+Biggs
+Code deciphered.
+
+The first door opens and they run through.
+
+Biggs
+Think how many of our people risked their lives, just for this code...
+
+Jessie
+Code deciphered.
+
+The second door opens, and Jessie, Cloud, and Barret enter the elevator.
+
+Jessie
+Push that button over there!
+
+Cloud pushes the button.
+
+Switch on.
+
+Barret
+Little by little the reactors'll drain out all the life. And that'll be that.
+
+Cloud
+It's not my problem.
+
+Barret
+The planet's dyin', Cloud!
+
+Cloud
+The only thing I care about is finishin' this job before security and the Roboguards come.
+
+Barret shakes his fist but says nothing. The elevator reaches the bottom and they exit. After heading down a set of stairs, Jessie hangs back to let the other two continue on.
+
+Jessie
+Push the [OK] button in front of a ladder to grab on to it. After that, use the [Directional button] to move up and down.
+
+Barret and Cloud eventually reach the core of the reactor.
+
+Barret
+When we blow this place, this ain't gonna be nothin' more than a hunka junk.
+Cloud, you set the bomb.
+
+Cloud
+Shouldn't you do it?
+
+Barret
+Jus' do it! I gotta watch to make sure you don't pull nothin'.
+
+Cloud
+Fine, be my guest.
+
+For an instant, everything goes red and Cloud stands on tiptoe. There is a sharp humming noise.
+
+Watch out!
+This isn't just a reactor!!
+
+Barret
+......What's wrong?
+
+Cloud
+Huh?
+
+Barret
+What's wrong, Cloud? Hurry it up!
+
+Cloud
+...Yeah, sorry.
+
+Cloud sets the bomb. Alarms go off and he looks around.
+
+Barret
+Heads up, here they come!
+
+They enter a battle with the Guard Scorpion.
+
+Cloud
+Barret, be careful!
+Attack when its tails up
+It's gonna counter with its laser!
+
+In spite of Cloud's poorly-translated advice, they defeat the Guard Scorpion.
+
+Cloud
+Come on, let's get outta here!
+
+Ten minutes to detonation!
+
+Heading out, Cloud comes across Jessie, trying to tug her foot out of a hole in the walkway. He crouches down beside her to help.
+
+Cloud
+You all right?
+
+Jessie
+My leg got stuck.
+Thanks!
+
+Leg freed, she jumps over him and runs on. Cloud follows her back up the elevator. (If you fail to help Jessie going up, Biggs will tell you "Jessie hasn't come up yet," and you have to go back down to help her anyway.)
+
+Biggs
+Let's go!
+
+Jessie
+Code deciphered.
+All right, be careful
+
+Biggs
+Code deciphered.
+
+They all run from the reactor, across the bridge to the exit where Wedge is waiting. Barret accidentally bowls Jessie over, Cloud helps her up, and they make it through the doorway just as the reactor blows.
+
+In the escape passage, the way out has been blocked by rubble, and Jessie is setting explosives to open the way.
+
+Biggs
+That should keep the planet going... at least a little longer.
+
+Wedge
+Yeah.
+
+Barret
+.........
+
+Jessie
+OK! Now everyone get back.
+
+The bomb blows an exit and they leap out one by one. Wedge runs around for a minute as though on fire.
+
+Barret
+All right, now let's get out of here.
+Rendezvous at Sector 8 station! Split up and get on the train!
+
+Biggs, Wedge, and Jessie nod and run off in separate directions. Barret starts to leave.
+
+Cloud
+H, hey!
+
+Barret
+If it's about your money Save it 'til we're back at the hideout.
+
+Barret runs off, and Cloud is left to make his own way to the station. Heading up into a city square, he sees a flower girl (Aeris), who gets knocked down by some people running about in a panic. She gets up, dusts herself off, and walks over to him.
+
+Flower Girl
+Excuse me.
+What happened?
+
+Cloud
+- You'd better get out of here
+- Nothing... hey, listen...
+
+You'd better get out of here.
+
+Flower Girl
+Really? I don't know what's going on, but all right.
+
+Nothing... hey, listen...
+.........
+- Don't see many flowers around here
+- Never mind
+
+Don't see many flowers around here
+
+Flower Girl
+Oh, these? Do you like them? They're only a gil...?
+
+Cloud
+- Buy one
+- Forget it
+
+Buy one
+
+Flower Girl
+Oh, thank you!
+Here you are!
+
+Forget it
+
+Flower Girl
+Ahh... not again.
+
+Never mind
+
+Flower Girl
+What! Tell me!
+Uh, excuse me, would you like to buy some flowers? They're only one gil.
+
+Cloud
+- Buy one
+- Forget it
+
+Buy one
+
+Flower Girl
+Oh, thank you!
+Here you are!
+
+Forget it
+
+Flower Girl
+Ahh... not again.
+
+The flower girl walks away, and Cloud continues through Sector 8.
+
+Redhead
+Just what the hell's going on!?
+
+Man with Hat
+Wonder what that is on the wall over there. Let's see...
+Don't be fooled by Shinra! Mako energy doesn't last forever! Mako is the planet's lifesource! The end is in sight!
+Protectors of the planet: AVALANCHE
+
+Eventually Cloud reaches a three-way intersection, beneath which the railroad tracks run out from a tunnel.
+
+Soldier
+Hey! You there!!
+
+Cloud
+Shinra soldiers...
+- Fight them
+- Later!
+
+Soldiers
+What the?
+
+Cloud
+Hmph
+
+more soldiers come from another direction.
+
+Soldiers
+That's him!
+
+Cloud
+Hmph
+
+Even more soldiers come from the third street, and they surround Cloud above the railway tunnel.
+
+Soldier
+That's as far as you go.
+
+Cloud
+I don't have time to be messin' around with you.
+
+Soldier
+Enough babbling...... Grab him!!
+
+As the soldiers lunge for him, Cloud jumps from the street and lands atop a train passing by underneath.
+
+Inside the train, Barret, Biggs, Wedge, and Jessie are gathered in the baggage car.
+
+Wedge
+Cloud never came.
+
+Biggs
+Cloud...... Wonder if he was killed?
+
+Barret
+No way!!
+
+Jessie
+Cloud......
+
+They lapse into silence for a moment, and then glance up at a drumming noise on the roof.
+
+Biggs
+Say, do you think Cloud's......
+Going to fight to the end for AVALANCHE!?
+
+Barret
+The hell would I know!? Do I look like a mind reader?
+
+He bangs his fist on a nearby crate.
+
+Hmph!! If y'all weren't such screw-ups...
+
+Wedge
+Hey, Barret! What about our money...?
+
+Barret bangs the crate again.
+
+Barret
+Uh, nothin' ...sorry.
+
+(from outside)
+Ahhh......
+
+They all glance up at some louder banging on the roof. The door opens and Cloud swings through.
+
+Biggs
+Cloud!!
+
+Jessie
+Cloud......
+
+Wedge
+Cloud!!
+
+Cloud
+Looks like I'm a little late.
+
+Barret
+You damn right, you're late!!
+Come waltzin' in here makin' a big scene!
+
+Cloud
+It's no big deal. Just what I always do.
+
+Barret
+Shi't!
+Havin' everyone worried like that you don't give a damn 'bout no one but yourself!
+
+Cloud
+Hmm...... You were worried about me!
+
+Barret
+Wha!?
+I'm takin' it outta your money, hot stuff!
+Wake up!
+We're movin' out! Follow me!
+
+Barret moves on ahead to the next car.
+
+Wedge
+Hey, Cloud!! You were great back there!
+
+He follows Barret.
+
+Biggs
+Heh heh...... Cloud! We'll do even better next time.
+
+Biggs disappears, too, leaving just Cloud and Jessie. Jessie walks over to the open door.
+
+Jessie
+Be careful, I'll shut this.
+
+She shuts the door and turns to Cloud, looking him up and down.
+
+Oh, Cloud!! Your face is pitch-black......
+
+She rubs at his face.
+
+There you go!
+Say, thanks for helping me back there at the Reactor!
+
+Jessie disappears into the next car. Cloud follows.
+
+Last train out of Sector 8 Station. Last stop is Sector 7, Train Graveyard. Expected time of arrival is 12:23AM, Midgar Standard Time...
+
+As the members of AVALANCHE run into the car, other passengers leave.
+
+Shinra Manager
+This is why I hate the last train. Hoo-boy...
+
+Train Bum
+Huh...? This is my house, so make yourselves at home.
+
+Bald Man
+You see the headlines in the Shinra Times?
+The terrorists that bombed the No. 1 Reactor are based somewhere in the slums.
+...blowing up a Reactor... they sure put some thought into this one.
+They must have a real calculating leader. I wonder what they'll do next?
+
+Barret
+Stop actin' like a damn kid. Si'down an' shu'up!
+
+Biggs
+It seems this train hasn't switched to security mode yet.
+I'm sure that will change by tomorrow.
+...YAWN... that sure took its toll on me. I'm gonna sleep till we get to the station.
+
+If you try to move on to the next car, a train worker stops you.
+
+Train Worker
+Please! You're disturbing the other passengers.
+
+Wedge
+Someday AVALANCHE's gonna be famous... and me, too!
+Cloud!!
+Don't ya think I got a bright future ahead of me?
+
+Cloud
+- What do you have in mind?
+- I wouldn't hold my breath
+
+What do you have in mind?
+
+Wedge
+All my life, I felt like nothin' but a sidekick.
+But after joinin' AVALANCHE and tryin' to save the Planet, I feel like I can do lots of things.
+
+I wouldn't hold my breath
+
+Wedge
+Oh man, that's pretty harsh, Cloud. You really think I won't?
+
+Jessie
+Hey, Cloud. You want to look at this with me?
+It's a map of the Midgar Rail System. Let's look at it together. I'll explain it to you.
+I like this kinda stuff. Bombs and monitors... you know, flashy stuff.
+Okay, it's about to start.
+This is a complete model of the city of Midgar.
+It's about a 1/10000 scale.
+The top plate is about 50 meters above ground.
+A main support structure holds the plate up in the center, and there are other support structures built in each section...
+psst... whisper... whisper (The No. 1 Reactor we blew up was in the northern section.)
+Then there's No. 2, No. 3 all the way up to the No. 8 Reactor.
+The 8 Reactors provide Midgar with electricity.
+Each town used to have a name, but no one in Midgar remembers them.
+Instead of names, we refer to them by numbered sectors. That's the kind of place this is.
+Phew..., this is next! Look.
+This is the route this train is on.
+The route spirals around the main support structure.
+We should be coming around the center area, right now.
+At each checkpoint, an ID sensor device is set up.
+It can check the identities and backgrounds on each and every passenger on the train by linking it up to the central data bank at Shinra headquarters.
+whisper... whisper... (Anyone could tell that we look suspicious, so we're using fake ID's.)
+
+A red light starts flashing.
+
+Jessie
+Speak of the devil...
+That light means that we're in the ID Security Check area.
+...whisper... whisper... (When the lights go off, you never know what kind of creeps'll come out.)
+...anyhow, we're almost back now. That's a relief.
+
+The lights stop flashing.
+
+Wedge
+I'm seein' stars. This sucks. I hate the dark.
+
+Jessie
+I know! Next time, I'll give you one I made myself.
+
+Cloud
+- Thanks anyway
+- Looking forward to it
+
+Thanks anyway
+
+Jessie
+Oh yeah, you might regret it. I'm the type who takes things personal.
+
+Looking forward to it
+
+Jessie
+Okay, then I'll put a little extra effort in and make it with a BANG.
+
+Jessie
+We're almost there. After talking with you, I really want to do it!
+I think you've lit my fuse!
+
+Biggs
+...snore... heebeebeeheebee... snore... (Don't act so damn big, Barret... snooze...)
+
+Barret
+Look... you can see the surface now. This city don't have no day or night.
+If that plate weren't there... we could see the sky.
+
+Cloud walks over to join Barret in looking out the window.
+
+Cloud
+A floating city... Pretty unsettling scenery.
+
+Barret gets up.
+
+Barret
+Huh?
+Never expect ta hear that outta someone like you.
+...you jes' full of surprises.
+The upper world... a city on a plate...
+It's 'cuz of that &^#$# 'pizza', that people underneath are sufferin'!
+And the city below is full of polluted air.
+On topa that, the Reactor keeps drainin' up all the energy.
+
+Cloud
+Then why doesn't everyone move onto the Plate?
+
+Barret
+Dunno. Probably 'cuz they ain't got no money. Or, maybe...
+'Cuz they love their land, no matter how polluted it gets.
+
+Cloud
+I know... no one lives in the slums because they want to.
+It's like this train. It can't run anywhere except where its rails take it.
+
