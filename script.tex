@@ -12,27 +12,7 @@
 
 \setmainfont{Gentium Plus}
 \usepackage[japanese,english]{babel}
-\newcommand{\switchjapanese}[1][]{\selectlanguage{japanese} \switchcolumn*[#1]}
-\newcommand{\switchenglish}{\selectlanguage{english} \switchcolumn}
 
-% Roles
-\newcommand{\role}[1]{\textbf{#1}}
-\newcommand{\roleBarretEng}{\role{Barret}}
-\newcommand{\roleBarretJap}{\role{バレット}}
-\newcommand{\roleBiggsEng}{\role{Biggs}}
-\newcommand{\roleBiggsJap}{\role{ビッグス}}
-\newcommand{\roleJessieEng}{\role{Jessie}}
-\newcommand{\roleJessieJap}{\role{ジェシー}}
-\newcommand{\roleCloudEng}{\role{Cloud}}
-\newcommand{\roleCloudJap}{\role{クラウド}}
-\newcommand{\stageDirection}[1]{\textit{#1}}
-\newenvironment{paracolSection}
-    {\begin{paracol}{2}
-    \selectlanguage{japanese}
-    }
-    {
-    \end{paracol}
-    }
 
 % RED
 \definecolor{benred8}{HTML}{E82C00} 
@@ -43,6 +23,109 @@
 % YELLOWS
 \definecolor{benyellow1}{HTML}{FFD435}
 \definecolor{benyellow2}{HTML}{7C6F3B}
+
+% Formatting
+\newcommand{\leaveSpace}{\vspace{0.0625in}}
+\newcommand{\switchJapanese}[1][]{\selectlanguage{japanese} \switchcolumn*[#1] \leaveSpace}
+\newcommand{\switchEnglish}{\selectlanguage{english} \switchcolumn}
+\newcommand{\stageDirection}[1]{{\centering \textcolor{benred8}{\textit{#1}} \par} \leaveSpace}
+\newcommand{\missing}{\textcolor{gray}{\textit{Missing text}}}
+\newenvironment{paracolSection}
+    {\begin{paracol}{2}
+    \selectlanguage{japanese}
+    }
+    {
+    \end{paracol}
+    \leaveSpace
+    }
+
+% Role names
+\newcommand{\BarretEng}{Barret}
+\newcommand{\BarretJap}{バレット}
+\newcommand{\BiggsEng}{Biggs}
+\newcommand{\BiggsJap}{ビッグス}
+\newcommand{\JessieEng}{Jessie}
+\newcommand{\JessieJap}{ジェシー}
+\newcommand{\CloudEng}{Cloud}
+\newcommand{\CloudJap}{クラウド}
+\newcommand{\WedgeEng}{Wedge}
+\newcommand{\WedgeJap}{ウェッジ}
+\newcommand{\unknownVoiceEng}{Unknown Voice}
+\newcommand{\unknownVoiceJap}{謎の声}
+\newcommand{\flowerGirlEng}{Flower Girl}
+\newcommand{\flowerGirlJap}{花売り}
+\newcommand{\soldierEng}{Soldier}
+\newcommand{\soldierJap}{兵士}
+\newcommand{\soldiersEng}{Soldiers}
+\newcommand{\soldiersJap}{兵士}
+\newcommand{\AvalancheEng}{AVALANCHE Members}
+\newcommand{\AvalancheJap}{アバランチの面々}
+\newcommand{\announcementEng}{Announcement}
+\newcommand{\announcementJap}{アナウンス}
+\newcommand{\ShinraManagerEng}{Shinra Manager}
+\newcommand{\ShinraManagerJap}{神羅課長}
+\newcommand{\trainConductorEng}{Train Conductor}
+\newcommand{\trainConductorJap}{車掌}
+
+% Formatted roles
+\newcommand{\role}[1]{\noindent \textbf{#1}}
+\newcommand{\roleBarretEng}{\role{\BarretEng}}
+\newcommand{\roleBarretJap}{\role{\BarretJap}}
+\newcommand{\roleBiggsEng}{\role{\BiggsEng}}
+\newcommand{\roleBiggsJap}{\role{\BiggsJap}}
+\newcommand{\roleJessieEng}{\role{\JessieEng}}
+\newcommand{\roleJessieJap}{\role{\JessieJap}}
+\newcommand{\roleCloudEng}{\role{\CloudEng}}
+\newcommand{\roleCloudJap}{\role{\CloudJap}}
+\newcommand{\roleWedgeEng}{\role{\WedgeEng}}
+\newcommand{\roleWedgeJap}{\role{\WedgeJap}}
+\newcommand{\roleUnknownVoiceEng}{\role{\unknownVoiceEng}}
+\newcommand{\roleUnknownVoiceJap}{\role{\unknownVoiceJap}}
+\newcommand{\roleFlowerGirlEng}{\role{\flowerGirlEng}}
+\newcommand{\roleFlowerGirlJap}{\role{\flowerGirlJap}}
+\newcommand{\roleSoldierEng}{\role{\soldierEng}}
+\newcommand{\roleSoldierJap}{\role{\soldierJap}}
+\newcommand{\roleSoldiersEng}{\role{\soldiersEng}}
+\newcommand{\roleSoldiersJap}{\role{\soldiersJap}}
+\newcommand{\roleAvalancheEng}{\role{\AvalancheEng}}
+\newcommand{\roleAvalancheJap}{\role{\AvalancheJap}}
+\newcommand{\roleAnnouncementEng}{\role{\announcementEng}}
+\newcommand{\roleAnnouncementJap}{\role{\announcementJap}}
+\newcommand{\roleShinraManagerEng}{\role{\ShinraManagerEng}}
+\newcommand{\roleShinraManagerJap}{\role{\ShinraManagerJap}}
+\newcommand{\roleTrainConductorEng}{\role{\trainConductorEng}}
+\newcommand{\roleTrainConductorJap}{\role{\trainConductorJap}}
+
+% Formatted role titles and their lines
+\newcommand{\roleSays}[4]
+    {
+    \role{#1} \par % Japanese role name
+    #3 \par % Japanese lines
+    \switchEnglish
+    \role{#2} \par % English role name
+    #4 \par % English lines
+    \leaveSpace
+    }
+\newcommand{\soundEtc}[2]
+    {
+    {\centering \textbf{#1} \par}
+    \switchEnglish
+    {\centering \texttt{\textbf{#2}} \par}
+    \leaveSpace
+    }
+\newcommand{\BarretSays}[2]{\roleSays{\BarretJap}{\BarretEng}{#1}{#2}}
+\newcommand{\BiggsSays}[2]{\roleSays{\BiggsJap}{\BiggsEng}{#1}{#2}}
+\newcommand{\JessieSays}[2]{\roleSays{\JessieJap}{\JessieEng}{#1}{#2}}
+\newcommand{\CloudSays}[2]{\roleSays{\CloudJap}{\CloudEng}{#1}{#2}}
+\newcommand{\WedgeSays}[2]{\roleSays{\WedgeJap}{\WedgeEng}{#1}{#2}}
+\newcommand{\unknownVoice}[2]{\roleSays{\unknownVoiceJap}{\unknownVoiceEng}{#1}{#2}}
+\newcommand{\flowerGirlSays}[2]{\roleSays{\flowerGirlJap}{\flowerGirlEng}{#1}{#2}}
+\newcommand{\soldierSays}[2]{\roleSays{\soldierJap}{\soldierEng}{#1}{#2}}
+\newcommand{\soldiersSay}[2]{\roleSays{\soldiersJap}{\soldiersEng}{#1}{#2}}
+\newcommand{\AvalancheSays}[2]{\roleSays{\AvalancheJap}{\AvalancheEng}{#1}{#2}}
+\newcommand{\announcementSays}[2]{\roleSays{\announcementJap}{\announcementEng}{#1}{#2}}
+\newcommand{\ShinraManagerSays}[2]{\roleSays{\ShinraManagerJap}{\ShinraManagerEng}{#1}{#2}}
+\newcommand{\trainConductorSays}[2]{\roleSays{\trainConductorJap}{\trainConductorEng}{#1}{#2}}
 
 % Luke Smith's title formatting
 \titleformat{\section}
@@ -68,7 +151,9 @@
 
 \maketitle
 
-\section*{Disc 1}
+\chapter*{Disc 1}
+
+\section*{Sector 1 \textemdash\ The No. 1 Reactor}
 
 \stageDirection{The opening sequence: A whirl of stars, humming softly, the view slowly
 drifting downwards and changing to show Aeris's face lit by Mako. She stands
@@ -80,15 +165,9 @@ and Cloud leap down last.}
 
 \begin{paracolSection}
 
-\roleBarretJap
-
-行くぞ、新入り！ オレに続け！
-
-\switchenglish
-
-\roleBarretEng
-
-C'mon newcomer. Follow me.
+\BarretSays
+{行くぞ、新入り！ オレに続け！}
+{C'mon newcomer. Follow me.}
 
 \end{paracolSection}
 
@@ -98,65 +177,1211 @@ Jessie is working to open the door.}
 
 \begin{paracolSection}
 
-\roleBiggsJap
+\BiggsSays
+{さすが、ソルジャー！ でもよ、
+反神羅（しんら）グループ【アパランチ】にソルジャーが参加するなんてスゲェよな！}
+{Wow! You used to be in SOLDIER all right!
+...Not everyday ya find one in a group like AVALANCHE.}
 
-さすが、ソルジャー！ でもよ、反神羅（しんら）グループ【アパランチ】にソルジャーが参加するなんてスゲェよな！
+\switchJapanese
 
-\switchenglish
+\JessieSays
+{その話って本当だったの？ ソルジャーって言ったら 私たちの敵でしょ？
 
-\roleBiggsEng
+どうして、そのソルジャーが私たちアバランチに協力するわけ？}
+{SOLDIER? Aren't they the enemy?
 
-Wow! You used to be in SOLDIER all right! ...Not everyday ya find one in a group like AVALANCHE.
+What's he doing with us in AVALANCHE?}
 
-\switchjapanese
+\switchJapanese
 
-\roleJessieJap
-
-その話って本当だったの？ ソルジャーって言ったら 私たちの敵でしょ？
-
-どうして、そのソルジャーが私たちアバランチに協力するわけ？
-
-\switchenglish
-
-\roleJessieEng
-
-SOLDIER? Aren't they the enemy?
-
-What's he doing with us in AVALANCHE?
-
-\switchjapanese
-
-\roleBiggsJap
-
-早とちりするな、ジェシー。元、ソルジャーなんだってさ
+\BiggsSays
+{早とちりするな、ジェシー。元、ソルジャーなんだってさ
 
 今はもう神羅（しんら）をやめちまって 俺たちの仲間ってわけさ
 
-まだ名前聞いてなかったよな。教えてくれ
-
-\switchenglish
-
-\roleBiggsEng
-
-Hold it, Jessie. He WAS in SOLDIER.
+まだ名前聞いてなかったよな。教えてくれ}
+{Hold it, Jessie. He WAS in SOLDIER.
 
 He quit them and now is one of us.
 
-Didn't catch your name...
+Didn't catch your name...}
 
-\switchjapanese
+\switchJapanese
+
+\CloudSays
+{……クラウドだ}
+{...Cloud.}
+
+\switchJapanese
+
+\BiggsSays
+{クラウドか、おれは……}
+{Cloud, eh? I'm...}
+
+\switchJapanese
+
+\CloudSays
+{あんたたちの名前なんて興味ないね。どうせこの仕事が終わったらお別れだ}
+{I don't care what your names are. Once this job's over... I'm outta here.}
+
+\end{paracolSection}
+
+\stageDirection{Barret comes running over.}
+
+\begin{paracolSection}
+
+\BarretSays
+{なにやってんだオマエたち！ かたまって行動するなって言ってんだろ！
+
+ターゲットは壱番魔晄炉（まこうろ）。魔晄炉前のブリッジに集合だぞ}
+{The hell you all doin'!? I thought I told you never to move in a group!
+
+Our target's the North Mako Reactor. We'll meet on the bridge in front of it.}
+
+\end{paracolSection}
+
+\stageDirection{Jessie opens the door and she, Biggs, and Wedge run through. Barret turns back to Cloud.}
+
+\begin{paracolSection}
+
+\BarretSays
+{元ソルジャー……。チッ、信用できねえな}
+{Ex-SOLDIER, huh? Don't trust ya!}
+
+\end{paracolSection}
+
+\stageDirection{Barret runs on ahead. Cloud looks up at the reactor before following. In front of the reactor, everyone but Wedge heads across the bridge inside.}
+
+\begin{paracolSection}
+
+\WedgeSays
+{俺は脱出口を確保しておくっす！
+
+しっかし、この大きな魔晄炉を爆破するなんて･･････みものっすね！}
+{I'll secure the escape passage. Concentrate on the mission, Cloud.
+
+Geez, we're really gonna blow this huge furnace up? This'll be somethin' to see!}
+
+\end{paracolSection}
+
+\stageDirection{Cloud follows the others into the reactor.}
+
+\begin{paracolSection}
+
+\BarretSays
+{……おい。おまえ魔晄炉（まこうろ）は初めてじゃないんだろ？}
+{Yo! This your first time in a reactor?}
+
+\switchJapanese
+
+\CloudSays
+{まあな。ソルジャー…… 神羅（しんら）カンパニーの人間だったからな}
+{No. After all, I did work for Shinra, y'know.}
+
+\switchJapanese
+
+\BarretSays
+{この星は魔晄（まこう）エネルギーに満ちている。住民はその魔晄エルネギーを使って日々生活している}
+{The planet's full of Mako energy. People here use it every day.}
+
+\end{paracolSection}
+
+\stageDirection{Cloud shrugs.}
+
+\begin{paracolSection}
+
+\BarretSays
+{でも誰も魔晄の本質を知らねえんだ。おまえ、知ってるか？
+
+魔晄はこの星を流れる血だ。それを神羅（しんら）って会社はガンガン吸い出していやがる。このへんちくりんなスクラップでな……}
+{\missing
+
+It's the life blood of this planet. But Shinra keeps suckin' the blood out with these weird machines.}
+
+\switchJapanese
+
+\CloudSays
+{能書きはいい。先を急ごう}
+{I'm not here for a lecture. Let's just hurry.}
+
+\switchJapanese
+
+\BarretSays
+{クッ……
+よし、ここからはオレといっしょに行動してもらうぜ}
+{That's it! You're comin' with me from now on.}
+
+\switchJapanese
+
+\JessieSays
+{私とビッグスがここのドアロックの暗号を手にいれたの}
+{Biggs and I got the code for this door.}
+
+\switchJapanese
+
+\BiggsSays
+{コード解除}
+{Code deciphered.}
+
+\end{paracolSection}
+
+\stageDirection{The first door opens and they run through.}
+
+\begin{paracolSection}
+
+\BiggsSays
+{ここの暗号を入手するために何人の仲間が犠牲になったことか……}
+{Think how many of our people risked their lives, just for this code...}
+
+\switchJapanese
+
+\JessieSays
+{コード解除}
+{Code deciphered.}
+
+\end{paracolSection}
+
+\stageDirection{The second door opens, and Jessie, Cloud, and Barret enter the elevator.}
+
+\begin{paracolSection}
+
+\JessieSays
+{さ、そこのボタンを押して！}
+{Push that button over there!}
+
+\end{paracolSection}
+
+\stageDirection{Cloud pushes the button.}
+
+\begin{paracolSection}
+
+\soundEtc{『スイッチオン』}{Switch on.}
+
+\switchJapanese
+
+\BarretSays
+{魔晄炉（まこうろ）のせいで、
+この星の命は毎日けずられていく。
+そしていつの日か……ゼロだ}
+{Little by little the reactors'll drain out all the life. And that'll be that.}
+
+\switchJapanese
+
+\CloudSays
+{悪いけど興味がないな}
+{It's not my problem.}
+
+\switchJapanese
+
+\BarretSays
+{星が死んじまうんだぞ。えっ、クラウドさんよ！}
+{The planet's dyin', Cloud!}
+
+\switchJapanese
+
+\CloudSays
+{俺が考えてるのは、
+さっさと仕事を終わらせたいってことだけだ。
+警備兵やガードロボットが来ないうちにな}
+{The only thing I care about is finishin' this job
+before security and the Roboguards come.}
+
+\end{paracolSection}
+
+\stageDirection{Barret shakes his fist but says nothing. The elevator reaches the bottom and they exit. After heading down a set of stairs, Jessie hangs back to let the other two continue on.}
+
+\begin{paracolSection}
+
+\JessieSays
+{はしごの前では【決定ボタン】を押して。
+そうすればはしごにつかまるわ。
+後は【方向キー】の上下で、のぼりおりするの}
+{Push the [OK] button in front of a ladder to
+grab on to it. After that, use the [Directional
+button] to move up and down.}
+
+\end{paracolSection}
+
+\stageDirection{Barret and Cloud eventually reach the core of the reactor.}
+
+\begin{paracolSection}
+
+\BarretSays
+{ここもブッ壊しちまえば ただのガラクタだぜ
+
+クラウドさんよ この爆弾をセットしてくれ}
+{When we blow this place, this ain't gonna be nothin' more than a hunka junk.
+
+Cloud, you set the bomb.}
+
+\switchJapanese
+
+\CloudSays
+    {あんたがやったほうが いいんじゃないのか？}
+    {Shouldn't you do it?}
+
+\switchJapanese
+
+\BarretSays
+    {オレ？　オレは見張らせてもらう。おまえさんがおかしなマネをしないようにな}
+    {Jus' do it! I gotta watch to make sure you don't pull nothin'.}
+
+\switchJapanese
+
+\CloudSays
+    {……好きにしてくれ}
+    {Fine, be my guest.}
+
+\end{paracolSection}
+
+\stageDirection{For an instant, everything goes red
+and Cloud stands on tiptoe. There is a sharp humming noise.}
+
+\begin{paracolSection}
+
+\unknownVoice
+    {目をさませ！
+
+    ここはただの発電所じゃない！！}
+    {Watch out!
+
+    This isn't just a reactor!!}
+
+\switchJapanese
+
+\BarretSays
+    {…………うした？}
+    {......What's wrong?}
+
+\switchJapanese
+
+\CloudSays
+    {え？}
+    {Huh?}
+
+\switchJapanese
+
+\BarretSays
+    {どうしたクラウドさんよ？ 早くしてくれ！}
+    {What's wrong, Cloud? Hurry it up!}
+
+\switchJapanese
+
+\CloudSays
+    {……ああ、すまない}
+    {...Yeah, sorry.}
+
+\end{paracolSection}
+
+\stageDirection{Cloud sets the bomb. Alarms go off and he looks around.}
+
+\begin{paracolSection}
+
+\BarretSays
+    {本格的にやってくるぜ}
+    {Heads up, here they come!}
+
+\end{paracolSection}
+
+\stageDirection{They enter a battle with the Guard Scorpion.}
+
+\begin{paracolSection}
+
+\CloudSays
+{バレット、気をつけろ
+
+しっぽをあげている間に攻撃すると レーザーで反撃してくるぞ}
+{Barret, be careful!
+
+Attack when its tails up
+
+It's gonna counter with its laser!}
+
+\end{paracolSection}
+
+\stageDirection{In spite of Cloud's poorly-translated advice, they defeat the Guard Scorpion.}
+
+\begin{paracolSection}
+
+\CloudSays
+{さあ、脱出だ}
+{Come on, let's get outta here!}
+
+\switchJapanese
+
+\soundEtc{爆破10分前}{Ten minutes to detonation!}
+
+\end{paracolSection}
+
+\stageDirection{Heading out, Cloud comes across Jessie, trying to
+tug her foot out of a hole in the walkway. He
+crouches down beside her to help.}
+
+\begin{paracolSection}
+
+\CloudSays
+{だいじょうぶか？}
+{You all right?}
+
+\switchJapanese
+
+\JessieSays
+{うかつ！！　足がはさまって……
+
+サンキュー！}
+{My leg got stuck.
+
+Thanks}
+
+\end{paracolSection}
+
+\stageDirection{Leg freed, she jumps over him and
+runs on. Cloud follows her back up the elevator.
+(If you fail to help Jessie going up, Biggs will
+tell you "Jessie hasn't come up yet," and you have
+to go back down to help her anyway.)}
+
+\begin{paracolSection}
+
+\BiggsSays
+{行くぞ！}
+{Let's go!}
+
+\switchJapanese
+
+\JessieSays
+{コード解除
+
+さ、あせらないで}
+{Code deciphered.
+
+All right, be careful}
+
+\switchJapanese
+
+\BiggsSays
+{コード解除}
+{Code deciphered.}
+
+\end{paracolSection}
+
+\stageDirection{They all run from the reactor,
+across the bridge to the exit where Wedge is
+waiting. Barret accidentally bowls Jessie over,
+Cloud helps her up, and they make it through the
+doorway just as the reactor blows.\\In the escape passage, the way out has been blocked
+by rubble, and Jessie is setting explosives to open
+the way.}
+
+\begin{paracolSection}
+
+\CloudSays
+{星の命……ちょっとはのびたかな}
+{That should keep the planet going... at least a little longer.}
+
+\switchJapanese
+
+\WedgeSays
+{そうっすね}
+{Yeah.}
+
+\switchJapanese
+
+\BarretSays
+{…………}
+{.........}
+
+\switchJapanese
+
+\JessieSays
+{出来た！ 下がって}
+{OK! Now everyone get back.}
+
+\end{paracolSection}
+
+\stageDirection{The bomb blows an exit and they
+leap out one by one. Wedge runs around for a minute
+as though on fire.}
+
+\begin{paracolSection}
+
+\BarretSays
+{さあ、引き上げるぞ
+
+ランデブー地点は８番街ステーション！ 各自単独行動、列車に乗りこむんだ！}
+{All right, now let's get out of here.
+
+Rendezvous at Sector 8 station! Split up and get on the train!}
+
+\end{paracolSection}
+
+\stageDirection{Biggs, Wedge, and Jessie nod and
+run off in separate directions. Barret starts to
+leave.}
+
+\begin{paracolSection}
+
+\CloudSays
+{お、おい！}
+{H, hey!}
+
+\switchJapanese
+
+\BarretSays
+{金の話なら 無事にアジトに帰ってからだ}
+{If it's about your money Save it 'til we're back at the hideout.}
+
+\end{paracolSection}
+
+\stageDirection{Barret runs off, and Cloud is left
+to make his own way to the station. Heading up into
+a city square, he sees a flower girl (Aeris), who
+gets knocked down by some people running about in a
+panic. She gets up, dusts herself off, and walks
+over to him.}
+
+\begin{paracolSection}
+
+\flowerGirlSays
+{ねえ
+
+何があったの？}
+{Excuse me.
+
+What happened?}
+
+\switchJapanese
 
 \roleCloudJap
 
-……クラウドだ
+\begin{itemize}
+    \item 逃げた方がいい
+    \item[] \roleFlowerGirlJap
+    \item[] そうなの！？なんだかわからないけどそうするわね
+    \item 気にするな……それより
+    \item[] ……
+    \begin{itemize}
+        \item 花なんて、めずらしいな
+        \item[] \roleFlowerGirlJap
+        \item[] あっ、これね。気に入ってくれた？ １ギルなんだけど、どう？
+        \item いや、なんでもないんだ
+        \item[] \roleFlowerGirlJap
+        \item[] もうっ！気になるな。　
+        \item[] あっ、ねぇ、お花はいらない？たった１ギルよ
+        \item[] \roleCloudJap
+        \begin{itemize}
+            \item もらおう
+            \item[] \roleFlowerGirlJap
+            \item[] わあ、ありがとう！はい！
+            \item やめとくよ
+            \item[] \roleFlowerGirlJap
+            \item[] …ちょっとがっかり、かな
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
 
-\switchenglish
+\switchEnglish
 
 \roleCloudEng
 
-...Cloud.
+\begin{itemize}
+    \item You'd better get out of here
+    \item[] \roleFlowerGirlEng
+    \item[] Really? I don't know what's going on, but all right.
+    \item Nothing... hey, listen...
+    \item[] .........
+    \begin{itemize}
+        \item Don't see many flowers around here
+        \item[] \roleFlowerGirlEng
+        \item[] Oh, these? Do you like them? They're only a gil...?
+        \item Never mind
+        \item[] \roleFlowerGirlEng
+        \item[] What! Tell me!
+        \item[] Uh, excuse me, would you like to buy some flowers? They're only one gil.
+        \item[] \roleCloudEng
+        \begin{itemize}
+            \item Buy one
+            \item[] \roleFlowerGirlEng
+            \item[] Oh, thank you! Here you are!
+            \item Forget it
+            \item[] \roleFlowerGirlEng
+            \item[] Ahh... not again.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
 
 \end{paracolSection}
+
+\stageDirection{The flower girl walks away, and Cloud continues through Sector 8.}
+
+% Can't find Japanese text for the following NPCs
+%\begin{paracolSection}
+%
+%Redhead
+%Just what the hell's going on!?
+%
+%Man with Hat
+%Wonder what that is on the wall over there. Let's see...
+%Don't be fooled by Shinra! Mako energy doesn't last forever! Mako is the planet's lifesource! The end is in sight!
+%Protectors of the planet: AVALANCHE
+%
+%\end{paracolSection}
+
+\stageDirection{Eventually Cloud reaches a
+three-way intersection, beneath which the railroad
+tracks run out from a tunnel.}
+
+\begin{paracolSection}
+
+\soldierSays
+{おい！　そこの男！！}
+{Hey! You there!!}
+
+\switchJapanese
+
+\roleCloudJap
+
+神羅兵か……
+
+\begin{itemize}
+    \item やってやる！
+    \item めんどくさいから逃げる
+\end{itemize}
+
+\switchEnglish
+
+\roleCloudEng
+
+Shinra soldiers...
+
+\begin{itemize}
+    \item Fight them
+    \item Later!
+\end{itemize}
+
+\switchJapanese
+
+\soldiersSay
+{なにごとだ！}
+{What the?}
+
+\switchJapanese
+
+\CloudSays
+{チッ！}
+{Hmph}
+
+\end{paracolSection}
+
+\stageDirection{More soldiers come from another direction.}
+
+\begin{paracolSection}
+
+\soldiersSay
+{こっちだ！！}
+{That's him!}
+
+\switchJapanese
+
+\CloudSays
+{チッ！}
+{Hmph}
+
+\end{paracolSection}
+
+\stageDirection{Even more soldiers come from the
+third street, and they surround Cloud above the
+railway tunnel.}
+
+\begin{paracolSection}
+
+\soldierSays
+{ここまでだな}
+{That's as far as you go.}
+
+\switchJapanese
+
+\CloudSays
+{残念だが、おまえらの相手をしてるほどヒマじゃないんでな}
+{I don't have time to be messin' around with you.}
+
+\switchJapanese
+
+\soldierSays
+{たわごとを…… よし捕らえろ！！}
+{Enough babbling...... Grab him!!}
+
+\end{paracolSection}
+
+\stageDirection{As the soldiers lunge for him, Cloud jumps from the street and lands atop a train passing by underneath.\\Inside the train, Barret, Biggs, Wedge, and Jessie are gathered in the baggage car.}
+
+\begin{paracolSection}
+
+\WedgeSays
+{クラウドさん こなかったっすね}
+{Cloud never came.}
+
+\switchJapanese
+
+\BiggsSays
+{クラウド…… やられちまったのかな}
+{Cloud...... Wonder if he was killed?}
+
+\switchJapanese
+
+\BarretSays
+{ケッ……！！
+あの野郎が金ももらわねえで いなくなるわけねえだろ！！}
+{No way!!}
+
+\switchJapanese
+
+\JessieSays
+{クラウド……}
+{Cloud......}
+
+\end{paracolSection}
+
+\stageDirection{They lapse into silence for a
+moment, and then glance up at a drumming noise on
+the roof.}
+
+\begin{paracolSection}
+
+\BiggsSays
+{なあ、クラウドってさ…
+
+最後まで、おれたち… アバランチのために戦ってくれんのか？}
+{Say, do you think Cloud's......
+
+Going to fight to the end for AVALANCHE!?}
+
+\switchJapanese
+
+\BarretSays
+{さあな…… 知らねえよ}
+{The hell would I know!? Do I look like a mind reader?}
+
+\end{paracolSection}
+
+\stageDirection{He bangs his fist on a nearby crate.}
+
+\begin{paracolSection}
+
+\BarretSays
+{チッ！！ おまえらがもうすこし たよりになりゃよ……
+
+あんな野郎、やとわねえでも いいんだがな…}
+{Hmph!! If y'all weren't such screw-ups...
+
+\missing}
+
+\switchJapanese
+
+\WedgeSays
+{あ、バレットさん 俺たちの給料……}
+{Hey, Barret! What about our money...?}
+
+\end{paracolSection}
+
+\stageDirection{Barret bangs the crate again.}
+
+\begin{paracolSection}
+
+\WedgeSays
+{や、なんでもないっす…}
+{Uh, nothin' ...sorry.}
+
+\switchJapanese
+
+\AvalancheSays
+{ふっ～～……}
+{Ahhh......}
+
+\end{paracolSection}
+
+\stageDirection{They all glance up at some louder
+banging on the roof. The door opens and Cloud
+swings through.}
+
+\begin{paracolSection}
+
+\BiggsSays
+{クラウド！！}
+{Cloud!!}
+
+\switchJapanese
+
+\JessieSays
+{クラウド……}
+{Cloud......}
+
+\switchJapanese
+
+\WedgeSays
+{クラウドさんっ！}
+{Cloud!!}
+
+\switchJapanese
+
+\CloudSays
+{約束の時間に 遅れたようだ}
+{Looks like I'm a little late.}
+
+\switchJapanese
+
+\BarretSays
+{おい！　遅刻野郎！！
+
+ずいぶん派手な おでましじゃねぇか}
+{You damn right, you're late!!
+
+Come waltzin' in here makin' a big scene!}
+
+\switchJapanese
+
+\CloudSays
+{そうでもない。ふつうだ}
+{It's no big deal. Just what I always do.}
+
+\switchJapanese
+
+\BarretSays
+{ケッ！！
+
+心配させやがって 勝手な野郎だ！}
+{Shi't!
+
+Havin' everyone worried like that you don't give a damn 'bout no one but yourself!}
+
+\switchJapanese
+
+\CloudSays
+{ほう……？ 心配してくれたのか}
+{Hmm...... You were worried about me!}
+
+\switchJapanese
+
+\BarretSays
+{なにっ！！
+
+チッ……遅刻のぶんは 報酬からひくからな
+
+おい、おめえら！
+
+場所変えるぞ。ついてこい！}
+{Wha!?
+
+I'm takin' it outta your money, hot stuff!
+
+Wake up!
+
+We're movin' out! Follow me!}
+
+\end{paracolSection}
+
+\stageDirection{Barret moves on ahead to the next car.}
+
+\begin{paracolSection}
+
+\WedgeSays
+{あっ、クラウドさん！！ おつかれっす！}
+{Hey, Cloud!! You were great back there!}
+
+\end{paracolSection}
+
+\stageDirection{He follows Barret.}
+
+\begin{paracolSection}
+
+\BiggsSays
+{へへ……クラウド！ 次の作戦もがんばろうな}
+{Heh heh...... Cloud! We'll do even better next time.}
+
+\end{paracolSection}
+
+\stageDirection{Biggs disappears, too, leaving just
+Cloud and Jessie. Jessie walks over to the open
+door.}
+
+\begin{paracolSection}
+
+\JessieSays
+{あぶないから 閉めとくね}
+{Be careful, I'll shut this.}
+
+\end{paracolSection}
+
+\stageDirection{She shuts the door and turns to Cloud, looking him up and down.}
+
+\begin{paracolSection}
+
+\JessieSays
+{やだ！　クラウド！！ 顔、まっくろ……}
+{Oh, Cloud!! Your face is pitch-black......}
+
+\end{paracolSection}
+
+\stageDirection{She rubs at his face.}
+
+\begin{paracolSection}
+
+\JessieSays
+{はい、できあがり！
+
+ね、魔胱炉で助けてくれて ありがとう！}
+{There you go!
+
+Say, thanks for helping me back there at the Reactor!}
+
+\end{paracolSection}
+
+\stageDirection{Jessie disappears into the next car. Cloud follows.}
+
+\begin{paracolSection}
+
+\announcementSays
+{ミッドガル８番街ステーション発最終列車～
+
+終点、スラム７番街列車墓場駅～
+
+到着予定時刻はミッドガル時０時23分……}
+{Last train out of Sector 8 Station.
+
+Last stop is Sector 7, Train Graveyard.
+
+Expected time of arrival is 12:23AM, Midgar Standard Time...}
+
+\end{paracolSection}
+
+\stageDirection{As the members of AVALANCHE run into the car, other passengers leave.}
+
+\begin{paracolSection}
+
+\ShinraManagerSays
+{これだから終電はまいるよ…。 はあ……}
+{This is why I hate the last train. Hoo-boy...}
+
+% Can't find Japanese text for the following NPCs
+% Train Bum
+% Huh...? This is my house, so make yourselves at home.
+% 
+% Bald Man
+% You see the headlines in the Shinra Times?
+% The terrorists that bombed the No. 1 Reactor are based somewhere in the slums.
+% ...blowing up a Reactor... they sure put some thought into this one.
+% They must have a real calculating leader. I wonder what they'll do next?
+
+\switchJapanese
+
+\BarretSays
+{Stop actin' like a damn kid. Si'down an' shu'up!}
+{子供じゃねえんだ。じっとしてろよ}
+
+\switchJapanese
+
+\BiggsSays
+{まだ列車の非常警備体制には 移行してないみたいだな
+
+明日はそうはいかないだろうけどな
+
+さすがにつかれたよ。　駅に着くまで、眠らせてくれ}
+{It seems this train hasn't switched to security mode yet.
+
+I'm sure that will change by tomorrow.
+
+...YAWN... that sure took its toll on me. I'm gonna sleep till we get to the station.}
+
+\end{paracolSection}
+
+\stageDirection{If you try to move on to the next car, the conductor stops you.}
+
+\begin{paracolSection}
+
+\trainConductorSays
+{たのみますよぅ！！ 他のお客さんの迷惑になりますから…}
+{Please! You're disturbing the other passengers.}
+
+\switchJapanese
+
+\WedgeSays
+{アバランチで名をあげて いつか俺だって……っす！
+
+クラウドさんっ！！俺にも明るい未来が待ってるっすよね？}
+{Someday AVALANCHE's gonna be famous... and me, too!
+
+Cloud!! Don't ya think I got a bright future ahead of me?}
+
+\switchJapanese
+
+\roleCloudJap
+
+\begin{itemize}
+    \item なにを期待してる？
+    \item[] \roleWedgeJap
+    \item[] 俺、いままでずっと人生ワキ役って感じで生きてきたっすよ
+    \item[] でも、アバランチにはいって、星の生命を救えばこんな俺でも･･････いろいろとね
+    \item 無理だな
+    \item[] \roleWedgeJap
+    \item[] ああ、ひどいなあ、クラウドさん。やっぱだめっすかね、そうすかね
+\end{itemize}
+
+\switchEnglish
+
+\roleCloudEng
+
+\begin{itemize}
+    \item What do you have in mind?
+    \item[] \roleWedgeEng
+    \item[] All my life, I felt like nothin' but a sidekick.
+    \item[] But after joinin' AVALANCHE and tryin' to save the Planet, I feel like I can do lots of things.
+    \item I wouldn't hold my breath
+    \item[] \roleWedgeEng
+    \item[] Oh man, that's pretty harsh, Cloud. You really think I won't?
+\end{itemize}
+
+\switchJapanese
+
+\JessieSays
+{ね、クラウド。いっしょに見ない？
+
+ミッドガル列車路線図ディスプレイ。二人で見ればきっと楽しいと思うの。私、説明してあげるね
+
+私、こういうの好きなのよ。爆弾とかモニタ画像とかハイテク関係
+
+さ、はじめるわよ
+
+これが魔晄炉都市ミッドガルの全景フレームモデルね
+
+スケールはだいたい１／10000ってとこかな
+
+上のプレートは、地上から約50M離れているの
+
+プレートを支えてるのは中心の大きな支柱と 各区画に建てられた柱……。柱は、機械塔とも呼ばれてるわ
+
+ヒソヒソ…… （爆破した壱番魔晄炉が北のはずれにあるの）
+
+そこから順番に２、３……８番魔晄炉まで８つの魔晄炉がミッドガルの電力供給を支えているのよ
+
+それぞれの街には、名前もあったんだけど ミッドガルに住む人は誰も覚えちゃいないわ
+
+名前なんかより、番号で呼ぶの。そういうところなのよ、ここは
+
+ふぅ…、次はこれ！ ほら、見て
+
+私たちがいま乗ってる列車のルートがこれよ
+
+プレートを支えている大きな柱に 螺旋状にレールが通っているの。いまは柱のちょうど真ん中のあたりね
+
+各通過ポイントの中にはID検知エリアが設置されてるの
+
+乗客すべての身分やなにから全部！ 神羅ビルのホストコンピュータと連動してチェックされちゃうわけよ
+
+ひそひそ…… （私たちはどう見たって不審人物だからニセのIDで通過してるの）}
+{Hey, Cloud. You want to look at this with me?
+
+It's a map of the Midgar Rail System. Let's look at it together. I'll explain it to you.
+
+I like this kinda stuff. Bombs and monitors... you know, flashy stuff.
+
+Okay, it's about to start.
+
+This is a complete model of the city of Midgar.
+
+It's about a 1/10000 scale.
+
+The top plate is about 50 meters above ground.
+
+A main support structure holds the plate up in the center, and there are other support structures built in each section...
+
+psst... whisper... whisper (The No. 1 Reactor we blew up was in the northern section.)
+
+Then there's No. 2, No. 3 all the way up to the No. 8 Reactor.
+
+The 8 Reactors provide Midgar with electricity.
+
+Each town used to have a name, but no one in Midgar remembers them.
+
+Instead of names, we refer to them by numbered sectors. That's the kind of place this is.
+
+Phew..., this is next! Look.
+
+This is the route this train is on.
+
+The route spirals around the main support structure.
+
+We should be coming around the center area, right now.
+
+At each checkpoint, an ID sensor device is set up.
+
+It can check the identities and backgrounds on each and every passenger on the train by linking it up to the central data bank at Shinra headquarters.
+
+whisper... whisper... (Anyone could tell that we look suspicious, so we're using fake ID's.)}
+
+\end{paracolSection}
+
+\stageDirection{A red light starts flashing.}
+
+\begin{paracolSection}
+
+\JessieSays
+{噂をすれば、ね
+
+この光がID検知エリア通過のサインなの
+
+ひそひそ…… （暗くなるからチカンが多いのよ。ID検知エリアは……）
+
+ま、それはさておき、もうすぐ地上に帰れるってわけ。なんだか、ホッとするね}
+{Speak of the devil...
+
+That light means that we're in the ID Security Check area.
+
+...whisper... whisper... (When the lights go off, you never know what kind of creeps'll come out.)
+
+...anyhow, we're almost back now. That's a relief.}
+
+\end{paracolSection}
+
+\stageDirection{The lights stop flashing.}
+
+\begin{paracolSection}
+
+\JessieSays
+{そうだ、クラウド
+
+今度、私の手作り作品を プレゼントしちゃおうかな}
+{I know!
+
+Next time, I'll give you one I made myself.}
+
+\switchJapanese
+
+\roleCloudJap
+
+\begin{itemize}
+    \item えんりょしとくよ
+    \item[] \roleJessieJap
+    \item[] そう、きっと後悔するかもよ。私、ズガッ～ンと根にもつタイプなの
+    \item 楽しみにしてるよ
+    \item[] \roleJessieJap
+    \item[] うん、じゃ、腕によりをかけてドッカ～ンと制作するわ
+\end{itemize}
+
+\switchEnglish
+
+\begin{itemize}
+    \item Thanks anyway
+    \item[] \roleJessieEng
+    \item[] Oh yeah, you might regret it. I'm the type who takes things personal.
+    \item Looking forward to it
+    \item[] \roleJessieEng
+    \item[] Okay, then I'll put a little extra effort in and make it with a BANG.
+\end{itemize}
+
+\roleCloudEng
+
+\switchJapanese
+
+\WedgeSays
+{目がチカチカしたっす。俺、暗いのだめっす。苦手っす}
+{I'm seein' stars. This sucks. I hate the dark.}
+
+\switchJapanese
+
+\JessieSays
+{もうすぐ駅に着くね。クラウドといっぱい話せて燃えたわ。私、導火線に火がついたかもよ}
+{We're almost there. After talking with you, I really want to do it! I think you've lit my fuse!}
+
+\switchJapanese
+
+\BiggsSays
+{スースー……ムニャムニャ…。（バレット、いばってんじゃねえぞ…）}
+{...snore... heebeebeeheebee... snore... (Don't act so damn big, Barret... snooze...)}
+
+\switchJapanese
+
+\BarretSays
+{見ろよ…地上が見えてきたぜ。ひるも夜もねえ、オレたちの街がよ
+
+ミッドガルのプレートさえなけりゃなぁ…。でっけえ空がおがめんのになあ}
+{Look... you can see the surface now. This city don't have no day or night.
+
+If that plate weren't there... we could see the sky.}
+
+\end{paracolSection}
+
+\stageDirection{Cloud walks over to join Barret in looking out the window.}
+
+\begin{paracolSection}
+
+\CloudSays
+{空中に浮かぶ都市か……。おちつかない風景だな}
+{A floating city... Pretty unsettling scenery.}
+
+\end{paracolSection}
+
+\stageDirection{Barret gets up.}
+
+\begin{paracolSection}
+
+\BarretSays
+{はあ？ あんたがそんなふうに感じるとはな
+
+……意外だぜ
+
+上の世界……プレート都市……
+
+あのくさったピザのせいで 下の人間がどんなに苦しんでることか……
+
+下の世界は今じゃあ 汚された空気のたまり場だ
+
+おまけに魔晄炉はどんどんエネルギーをくみ上げちまう
+
+おかげで土地は枯れる一方だ。空気をきれいにする力もなくしちまった}
+{Huh? Never expect ta hear that outta someone like you.
+
+...you jes' full of surprises.
+
+The upper world... a city on a plate...
+
+It's 'cuz of that \&\^{}\#\$\#\ `pizza', that people underneath are sufferin'!
+
+And the city below is full of polluted air.
+
+On topa that, the Reactor keeps drainin' up all the energy.
+
+\missing}
+
+\switchJapanese
+
+\CloudSays
+{どうしてみんな上へ移らないんだろう……}
+{Then why doesn't everyone move onto the Plate?}
+
+\switchJapanese
+
+\BarretSays
+{さあな。金がないからだろ。いや、それとも……
+
+どんなに汚されていても 地ベタが好きなのかもな}
+{Dunno. Probably 'cuz they ain't got no money. Or, maybe...
+
+'Cuz they love their land, no matter how polluted it gets.}
+
+\switchJapanese
+
+\CloudSays
+{わかってるさ…。好きでスラムに住んでるやつなどいない
+
+みんな、この列車とおなじ。敷かれたレールには逆らえないんだ}
+{I know... no one lives in the slums because they want to.
+
+It's like this train. It can't run anywhere except where its rails take it.}
+
+\end{paracolSection}
+
+\section*{Sector 7 \textemdash\ Seventh Heaven}
 
 \end{document}
 
